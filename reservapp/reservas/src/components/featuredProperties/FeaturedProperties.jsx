@@ -3,7 +3,7 @@ import "./featuredProperties.css";
 
 const FeaturedProperties = () => {
 
-  const {data, loading, error} = useFetch("/hotels?type=apartment&featured=true&limit=4&min=0&max=99999999999")
+  const {data, loading, error} = useFetch("/hotels?type=apartment&featured=true&limit=10&min=0&max=99999999999")
   return (
     <div className="fp">
       {loading ? "Cargando.." : 
